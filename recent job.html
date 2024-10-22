@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sahar Timori" />
+    <meta name="about" content="Job Portal" />
+    <title>Recent Job</title>
+    <link href="style.css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="images/favicon .ico" rel="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="style.css/smallscreen.css"
+      rel="stylesheet"
+      media="screen and (max-width: 765px)"
+    />
+    <link
+      href="style.css/widesceen.css"
+      rel="stylesheet"
+      media="screen and (max-width: 991px)"
+    />
+  </head>
+  <body>
+    <!--......................sidebar section.......................-->
+
+    <header>
+      <button
+        class="btn"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+      >
+        <img src="images/sidebar-logo.png" class="sidebar-logo" />
+      </button>
+      <a class="nav-brand" href="#">Recent JOb</a>
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            Job Portal
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <nav>
+            <ul>
+              <li class="nav-item">
+                <i class="fa-solid fa-house"></i
+                ><a href="index.html" class="sidebar-link">Home</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-briefcase"></i
+                ><a href="recent job.html" class="sidebar-link">Recent Jobs</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-user-tie"></i
+                ><a href="admin panel.html" class="sidebar-link">Admin Panel</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-table-columns"></i
+                ><a href="dashboard.html" class="sidebar-link">Dashboard</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-file-invoice"></i
+                ><a href="jobs.html" class="sidebar-link">Jobs</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <a href="application tracking.html" class="sidebar-link"
+                  >Application tracking</a
+                >
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-id-card"></i
+                ><a href="profile.html" class="sidebar-link">profile</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-users"></i
+                ><a href="about us.html" class="sidebar-link">About us</a>
+              </li>
+              <br /><br /><br /><br />
+              <button class="btn" style="color: #e7eff6">
+                <i class="fa-solid fa-right-from-bracket"></i> Log Out
+              </button>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <section class="search-bar">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control search-form me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-search mx-1" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </section>
+    </header>
+
+    <!--......................body section.......................-->
+
+    <div class="main-body py-5">
+      <h1>Recent Jobs</h1>
+    </div>
+
+    <!-- start search bar -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 job-search">
+          <div class="input-group mb-3">
+            <input
+              type="search"
+              id="search-input"
+              class="form-control"
+              placeholder="Job title, Company, Location"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn"
+              style="background-color: #2a4d69; color: #e7eff6"
+              type="button"
+              id="button-addon2"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="dropdown filter-feature">
+            <button
+              class="btn dropdown-toggle"
+              style="color: #e7eff6; background-color: #2a4d69"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Filter
+            </button>
+            <div class="dropdown-menu">
+              <h6 class="dropdown-header">Job Type</h6>
+              <div class="recentFilterBtn">
+                <button class="Full-Time filterbtn">
+                  <a class="dropdown-item" href="#">Full-Time</a>
+                </button>
+                <button class="Part-Time">
+                  <a class="dropdown-item" href="#">Part-Time</a>
+                </button>
+                <button class="Internship">
+                  <a class="dropdown-item" href="#">Internship</a>
+                </button>
+              </div>
+
+              <div class="dropdown-divider"></div>
+
+              <h6 class="dropdown-header">Location</h6>
+              <div class="recentFilterBtn">
+                <button class="Remote">
+                  <a class="dropdown-item" href="#">Remote</a>
+                </button>
+                <button class="New-York">
+                  <a class="dropdown-item" href="#">New York</a>
+                </button>
+                <button class="London">
+                  <a class="dropdown-item" href="#">London</a>
+                </button>
+              </div>
+
+              <div class="dropdown-divider"></div>
+
+              <h6 class="dropdown-header">Industry</h6>
+              <div class="recentFilterBtn">
+                <button class="Technology">
+                  <a class="dropdown-item" href="#">Technology</a>
+                </button>
+                <button class="Finance">
+                  <a class="dropdown-item" href="#">Finance</a>
+                </button>
+                <button class="Education">
+                  <a class="dropdown-item" href="#">Education</a>
+                </button>
+              </div>
+
+              <div class="dropdown-divider"></div>
+
+              <h6 class="dropdown-header">Skills</h6>
+              <div class="recentFilterBtn">
+                <button class="JavaScript">
+                  <a class="dropdown-item" href="#">JavaScript</a>
+                </button>
+                <button class="Python">
+                  <a class="dropdown-item" href="#">Python</a>
+                </button>
+                <button class="SQL">
+                  <a class="dropdown-item" href="#">SQL</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- search bar end -->
+
+    <!-- Start Jobs -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>There are more then <span>400 </span>Jobs</p>
+        </div>
+
+        <div class="col-lg-12" id="joblistcontainer">
+          <div class="recent-job-card">
+            <div class="job-details">
+              <div class="icon-img">
+                <i class="fa-solid fa-computer"></i>
+              </div>
+              <div class="text">
+                <h2>Backend Developer</h2>
+                <span>Spotify</span>
+              </div>
+            </div>
+            <div class="job-salary">
+              <h4>$130 - $150 /yr</h4>
+              <button class="btn0">
+                <a class="btn0-feature" href="profile.html">Apply</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row py-5">
+      <div
+        class="col-lg-5 m-auto"
+        style="display: flex; justify-content: center"
+      >
+        <button class="btn3">BROWSE ALL SECTORE</button>
+      </div>
+    </div>
+
+    <!-- ..............Footer................ -->
+
+    <footer>
+      <nav class="nav-feature">
+        <p>&#169; 2024 JOb Portal. All rights reserved</p>
+        <address>Contact us: info@Job.com | 123-456-7659</address>
+      </nav>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const jobPostings = [
+          {
+            id: "1",
+            company: "Google",
+            title: "Software Engineer",
+            salary: "$134 - $148 /yr",
+            applyLink: "profile.html",
+            icon: "fab fa-google",
+            apply: "Apply",
+            JobType: "Full-Time",
+            Location: "Remote",
+            Industry: "Technology",
+            Skills: "JavaScript",
+          },
+          {
+            id: "2",
+            company: "Microsoft",
+            title: "Senior Developer",
+            salary: "$150 - $170 /yr",
+            applyLink: "profile2.html",
+            icon: "fab fa-facebook",
+            apply: "Apply",
+            JobType: "Contract",
+            Location: "Remote",
+            Industry: "Technology",
+            Skills: "JavaScript",
+          },
+          {
+            id: "3",
+            company: "Google",
+            title: "Lead Software Engineer",
+            salary: "$140 - $160 /yr",
+            applyLink: "profile2.html",
+            icon: "fab fa-git-alt",
+            apply: "Apply",
+            JobType: "Full-Time",
+            Location: "Remote",
+            Industry: "Technology",
+            Skills: "JavaScript",
+          },
+          {
+            id: "4",
+            company: "Amazon",
+            title: "Full Stack Developer",
+            salary: "$130 - $150 /yr",
+            applyLink: "profile2.html",
+            icon: "fab fa-facebook",
+            apply: "Apply",
+            JobType: "Part-Time",
+            Location: "New-York",
+            Industry: "Finance",
+            Skills: "Python",
+          },
+          {
+            id: "5",
+            company: "IBM",
+            title: "Cloud Solutions Architect",
+            salary: "$160 - $180 /yr",
+            applyLink: "profile2.html",
+            icon: "fab fa-youtube",
+            apply: "Apply",
+            JobType: "Part-Time",
+            Location: "New-York",
+            Industry: "Finance",
+            Skills: "Python",
+          },
+          {
+            id: "6",
+            company: "Facebook",
+            title: "Data Scientist",
+            salary: "$150 - $170 /yr",
+            applyLink: "profile2.html",
+            icon: "fab fa-google",
+            apply: "Apply",
+            JobType: "Part-Time",
+            Location: "New-York",
+            Industry: "Finance",
+            Skills: "Python",
+          },
+          {
+            id: "7",
+            company: "Netflix",
+            title: "DevOps Engineer",
+            salary: "$140 - $160 /yr",
+            applyLink: "profile2.html",
+            icon: "fab fa-facebook",
+            apply: "Apply",
+            JobType: "Part-Time",
+            Location: "San-Francisco",
+            Industry: "Healthcare",
+            Skills: "SQL",
+          },
+          {
+            id: "8",
+            company: "Apple",
+            title: "Mobile Application Developer",
+            salary: "$130 - $150 /yr",
+            applyLink: "profile2.html",
+            icon: "fab fa-facebook",
+            apply: "Apply",
+            JobType: "Internship",
+            Location: "San-Francisco",
+            Industry: "Healthcare",
+            Skills: "SQL",
+          },
+          {
+            id: "9",
+            company: "Salesforce",
+            title: "Software Development Manager",
+            salary: "$160 - $180 /yr",
+            applyLink: "profile2.html",
+            icon: "fab fa-facebook",
+            apply: "Apply",
+            JobType: "Internship",
+            Location: "London",
+            Industry: "Education",
+            Skills: "Project-Management",
+          },
+          {
+            id: "10",
+            company: "Adobe",
+            title: "UI/UX Designer",
+            salary: "$120 - $140 /yr",
+            applyLink: "profile2.html",
+            icon: "fab fa-facebook",
+            apply: "Apply",
+            JobType: "Contract",
+            Location: "London",
+            Industry: "Education",
+            Skills: "Project-Management",
+          },
+        ];
+
+        // create jobcards function
+
+        function createJobCard(job) {
+          return `
+        <div class="job-details">
+          <div class="icon-img">
+            <i class="${job.icon}"></i>
+          </div>
+          <div class="text">
+            <h2>${job.title}</h2>
+            <span>${job.company}</span>
+          </div>
+        </div>
+        <div class="job-salary">
+          <h4>${job.salary}</h4>
+          <button class="btn0">
+            <a href="${job.applyLink}" class="btn0-feature">${job.apply}</a>
+          </button>
+        </div>
+      `;
+        }
+
+        const jobListContainer = document.getElementById("joblistcontainer");
+
+        if (jobListContainer !== null) {
+          jobPostings.forEach((job) => {
+            const jobCard = document.createElement("div");
+            jobCard.className = "recent-job-card";
+            jobCard.innerHTML = createJobCard(job);
+            jobListContainer.appendChild(jobCard);
+          });
+        }
+
+        // search input and button
+
+        const button = document.getElementById("button-addon2");
+        const searchInput = document.getElementById("search-input");
+
+        button.addEventListener("click", function () {
+          jobListContainer.innerHTML = "";
+
+          const searchTerm = searchInput.value.trim().toLowerCase();
+          jobPostings.forEach((job) => {
+            if (
+              job.company.toLowerCase().includes(searchTerm) ||
+              job.title.toLowerCase().includes(searchTerm) ||
+              job.Location.toLowerCase().includes(searchTerm)
+            ) {
+              const jobCard = document.createElement("div");
+              jobCard.className = "recent-job-card";
+              jobCard.innerHTML = createJobCard(job);
+              jobListContainer.appendChild(jobCard);
+            }
+          });
+        });
+
+        // fiter button
+
+        const linkBtn = document.querySelectorAll(".dropdown-item");
+
+        linkBtn.forEach((linkBtn) => {
+          linkBtn.addEventListener("click", function () {
+            jobListContainer.innerHTML = "";
+
+            const filterTerm = linkBtn.textContent;
+            jobPostings.forEach((job) => {
+              if (
+                job.JobType.includes(filterTerm) ||
+                job.Industry.includes(filterTerm) ||
+                job.Skills.includes(filterTerm) ||
+                job.Location.includes(filterTerm)
+              ) {
+                const jobCard = document.createElement("div");
+                jobCard.className = "recent-job-card";
+                jobCard.innerHTML = createJobCard(job);
+                jobListContainer.appendChild(jobCard);
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

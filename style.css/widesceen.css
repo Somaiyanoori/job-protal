@@ -1,0 +1,8 @@
+@media screen and (max-width: 991px) {
+    body {
+        font-size: small;
+    }
+    div {
+        padding: 2%;
+    }
+}

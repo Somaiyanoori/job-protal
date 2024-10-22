@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" contents="Sahar Timori,Somaiya Noori,Sahar Yousufi,Setayesh Amini">
+    <meta name="about" content="Admin Panel">
+    <title>Admin Panel</title>
+    <link href="style.css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="images/favicon .ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c5fb0e0d3.js" crossorigin="anonymous"></script>
+    <link href="style.css/smallscreen.css" rel="stylesheet" media="screen and (max-width: 765px)">
+    <link href="style.css/widescreen.css" rel="stylesheet" media="screen and (max-width: 991px)">
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+     <!--......................sidebar section.......................-->
+
+     <header>
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="images/sidebar-logo.png" class="sidebar-logo"></button>
+       <a class="nav-brand" href="admin panel.html">Panel</a>
+         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+         <div class="offcanvas-header">
+         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Job Portal</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+           <nav>
+               <ul>
+                 <li class="nav-item"><i class="fa-solid fa-house"></i><a href="index.html" class="sidebar-link">Home</a></li><br>
+                 <li class="nav-item"><i class="fa-solid fa-briefcase"></i><a href="recent job.html" class="sidebar-link">Recent Jobs</a></li><br>
+                 <li class="nav-item"><i class="fa-solid fa-user-tie"></i><a href="admin panel.html" class="sidebar-link">Admin Panel</a></li><br>
+                 <li class="nav-item"><i class="fa-solid fa-table-columns"></i><a href="dashboard.html" class="sidebar-link">Dashboard</a></li><br>
+                 <li class="nav-item"><i class="fa-solid fa-file-invoice"></i><a href="jobs.html" class="sidebar-link">Jobs</a></li><br>
+                 <li class="nav-item"><i class="fa-solid fa-rectangle-list"></i> <a href="application tracking.html" class="sidebar-link">Application tracking</a></li><br>
+                 <li class="nav-item"><i class="fa-solid fa-id-card"></i><a href="profile.html" class="sidebar-link">profile</a></li><br>
+                 <li class="nav-item"><i class="fa-solid fa-users"></i><a href="about us.html" class="sidebar-link">About us</a></li><br><br><br><br>
+                 <button class="btn" style="color: #e7eff6;"><i class="fa-solid fa-right-from-bracket"></i> Log Out</button>
+               </ul>
+           </nav>
+        </div>
+        </div>
+       
+        <section class="search-bar">
+           <form class="d-flex" role="search">
+             <input class="form-control search-form me-2" type="search" placeholder="Search" aria-label="Search">
+             <button class="btn btn-search mx-1" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+           </form>
+       </section>
+    </header>
+
+   <!--......................main section.......................-->
+            
+         <!--container of charts and content about admin panel-->
+           <main>
+      <div class="container py-5">
+        <div class="row">
+        <div class="col-lg-3 admin">
+          <h1>Admin panel</h1>
+          <p>Overview of last month</p>
+          <h4>$3468098</h4>
+          <p>current month</p>
+          <h4>96</h4>
+          <p>carrent month sale</p>
+          <button type="button" class="btn btn-primary btn-lg">primary</button>
+        </div>
+        <div class="col-lg-4 chart column py-5">
+          <canvas id="columnChart"></canvas>
+        </div>
+        <div class="col-lg-4 chart pie">
+          <canvas id="pieChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      // Pie Chart Data
+      const pieChartData = {
+        labels: ["Sales", "Marketing", "Development"],
+        datasets: [
+          {
+            data: [50, 30, 60],
+            backgroundColor: [
+              "rgba(54, 162, 235, 1)",
+              "rgba(255, 206, 86, 1)",
+              "rgba(75, 192, 192, 1)",
+            ],
+            hoverOffset: 3,
+          },
+        ],
+      };
+
+      // Column Chart Data
+      const columnChartData = {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        datasets: [
+          {
+            label: "Monthly Sales",
+            data: [22, 29, 10, 15, 12, 5],
+            backgroundColor: "rgba(54, 162, 235, 1)",
+          },
+        ],
+      };
+
+      // Create Pie Chart
+      const pieChartCanvas = document
+        .getElementById("pieChart")
+        .getContext("2d");
+      const pieChart = new Chart(pieChartCanvas, {
+        type: "pie",
+        data: pieChartData,
+        options: {
+          responsive: true, // Make chart responsive to container size
+        },
+      });
+
+      // Create Column Chart
+      const columnChartCanvas = document
+        .getElementById("columnChart")
+        .getContext("2d");
+      const columnChart = new Chart(columnChartCanvas, {
+        type: "bar",
+        data: columnChartData,
+        options: {
+          responsive: true, // Make chart responsive to container size
+        },
+      });
+    </script>
+
+
+
+  <!-- container of information that are like button-->
+
+  <div class="wallet">
+  <div class="box">
+  <h6>Referral Earning</h6>
+  <h5>$ 4,656,87</h5></div>
+  <div class="box">
+  <h6>Referral Earning</h6>
+  <h5>$ 4,656,87</h5></div>
+  <div class="box">
+  <h6>Referral Earning</h6>
+  <h5>$ 4,656,87</h5></div>
+  <div class="box">
+  <h6>Referral Earning</h6>
+  <h5>$ 4,656,87</h5></div>
+  </div>
+  <div class="wallet">
+  <div class="boxes">
+  <h4>$432</h4>
+  <h5>Revenue statues</h5></div>
+  <div class="boxes">
+  <h4>$432</h4>
+  <h5>Revenue statues</h5></div>
+  <div class="boxes">
+  <h4>$432</h4>
+  <h5>Revenue statues</h5></div>
+  <div class="boxes">
+  <h4>$432</h4>
+  <h5>Revenue statues</h5></div></div>
+  <!--img-->
+  </div>
+  <div class="row">
+  <div class="col-sm-12">
+  <img
+  class="buleimg"
+  src="images/job-1257204_640.webp"
+  alt="job img"/> </div></div></div>
+  <!-- admin table-->
+  <div class="tables">
+    <table class="table" style="border: #c9d4e9 solid 2px;">
+      <tbody>
+        <tr>
+          <th>Admins</th>
+          <th>Contact</th>
+        </tr>
+        <tr>
+          <td><img src="images/1.jpg" alt="profile">  Rose</td>
+          <td><i class="fa fa-twitter" aria-hidden="true"></i>   <i class="fa fa-facebook" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <td><img src="images/10.jpg" alt="profile">  Elisa</td>
+          <td><i class="fa fa-twitter" aria-hidden="true"></i>   <i class="fa fa-facebook" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <td><img src="images/9.jpg" alt="profile">  Morsa</td>
+          <td><i class="fa fa-twitter" aria-hidden="true"></i>   <i class="fa fa-facebook" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <td><img src="images/4.jpg" alt="profile"> Olivia</td>
+          <td><i class="fa fa-twitter" aria-hidden="true"></i>   <i class="fa fa-facebook" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <td><img src="images/7.jpg" alt="profile">  Ava</td>
+          <td><i class="fa fa-twitter" aria-hidden="true"></i>   <i class="fa fa-facebook" aria-hidden="true"></i></td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+  <!-- big or second table-->
+  <table class="table" style="border: #c9d4e9 solid 2px;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Customers</th>
+        <th scope="col">From</th>
+        <th scope="col">Price</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Emma</td>
+        <td>USA</td>
+        <td>67$</td>
+        <td>open</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Nova</td>
+        <td>USA</td>
+        <td>50$</td>
+        <td>open</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Nora</td>
+        <td>USA</td>
+        <td>30$</td>
+        <td>open</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Lisa</td>
+        <td>UK</td>
+        <td>46$</td>
+        <td>open</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Ava</td>
+        <td>UK</td>
+        <td>83$</td>
+        <td>open</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Sara</td>
+        <td>UK</td>
+        <td>86$</td>
+        <td>open</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+   
+
+ </div>
+  </main>
+
+  <footer>
+    <nav class="nav-feature">
+       <p> &#169; 2024 JOb Portal. All rights reserved</p>
+       <address>Contact us: info@Job.com | 123-456-7659</address>
+    </nav>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="authors"
+      content="Sahar Timori,Somaiya Noori,Sahar Yousufi,Setayesh Amini"
+    />
+    <meta name="about" content="Dashboard" />
+    <title>Job tracking</title>
+    <link href="style.css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="images/favicon .ico" rel="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9c5fb0e0d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="style.css/smallscreen.css"
+      rel="stylesheet"
+      media="screen and (max-width: 765px)"
+    />
+    <link
+      href="style.css/widescreen.css"
+      rel="stylesheet"
+      media="screen and (max-width: 991px)"
+    />
+    <style>
+      .person-box {
+        background-color: #e7eff6;
+        margin: 10px;
+        padding: 10px 15px;
+      }
+      .profile-header,
+      .about-section,
+      .timeline-title,
+      .timeline-post {
+        background-color: #e7eff6;
+      }
+    </style>
+  </head>
+  <body>
+    <!--......................sidebar section.......................-->
+
+    <header>
+      <button
+        class="btn"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+      >
+        <img src="images/sidebar-logo.png" class="sidebar-logo" />
+      </button>
+      <a class="nav-brand" href="#">JOb Tracking</a>
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            Job Portal
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <nav>
+            <ul>
+              <li class="nav-item">
+                <i class="fa-solid fa-house"></i
+                ><a href="index.html" class="sidebar-link">Home</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-briefcase"></i
+                ><a href="recent job.html" class="sidebar-link">Recent Jobs</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-user-tie"></i
+                ><a href="admin panel.html" class="sidebar-link">Admin Panel</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-table-columns"></i
+                ><a href="dashboard.html" class="sidebar-link">Dashboard</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-file-invoice"></i
+                ><a href="jobs.html" class="sidebar-link">Jobs</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <a href="application tracking.html" class="sidebar-link"
+                  >Application tracking</a
+                >
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-id-card"></i
+                ><a href="profile.html" class="sidebar-link">profile</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-users"></i
+                ><a href="about us.html" class="sidebar-link">About us</a>
+              </li>
+              <br /><br /><br /><br />
+              <button class="btn" style="color: #e7eff6">
+                <i class="fa-solid fa-right-from-bracket"></i> Log Out
+              </button>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <section class="search-bar">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control search-form me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-search mx-1" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </section>
+    </header>
+
+    <div class="container-fluid py-5">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-lg-3 sidebar">
+          <div class="container m-4 p-2">
+            <h2 style="text-align: left">Account executive</h2>
+            <br />
+            <button class="btn0 mt-4">
+              <a class="btn0-feature" href="#">Qualified</a>
+            </button>
+            <button class="btn0">
+              <a class="btn0-feature" href="#">Disqualified</a>
+            </button>
+          </div>
+          <!-- Qualified Section -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12 col-md-6">
+                <div class="qualified-section">
+                  <div class="person-box" data-index="0">
+                    <img
+                      src="images/9.jpg"
+                      alt="profile"
+                      style="height: 40px; width: 40px; border-radius: 50%"
+                    />
+                    <p class="person-name">Emma</p>
+                    <p class="person-title">
+                      Data Analyst with expertise in data visualization.
+                    </p>
+                    <div class="d-flex">
+                      <button
+                        class="btn0 p-1 m-2"
+                        style="width: 30%; height: 40%"
+                      >
+                        <a class="btn0-feature" href="#">Media</a>
+                      </button>
+                      <button
+                        class="btn0 p-1 m-2"
+                        style="width: 30%; height: 40%"
+                      >
+                        <a class="btn0-feature" href="#">Creative</a>
+                      </button>
+                      <button
+                        class="btn0 p-1 m-2"
+                        style="width: 30%; height: 40%"
+                      >
+                        <a class="btn0-feature" href="#">Agency</a>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- More Qualified items -->
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-6">
+                <div class="qualified-section">
+                  <div class="person-box" data-index="1">
+                    <img
+                      src="images/8.jpg"
+                      alt="profile"
+                      style="height: 40px; width: 40px; border-radius: 50%"
+                    />
+                    <p class="person-name">Sophia</p>
+                    <p class="person-title">
+                      Marketing Specialist skilled in digital advertising
+                      strategies.
+                    </p>
+                    <div class="d-flex">
+                      <button
+                        class="btn0 p-1 m-2"
+                        style="width: 30%; height: 40%"
+                      >
+                        <a class="btn0-feature" href="#">Media</a>
+                      </button>
+                      <button
+                        class="btn0 p-1 m-2"
+                        style="width: 30%; height: 40%"
+                      >
+                        <a class="btn0-feature" href="#">Creative</a>
+                      </button>
+                      <button
+                        class="btn0 p-1 m-2"
+                        style="width: 30%; height: 40%"
+                      >
+                        <a class="btn0-feature" href="#">Agency</a>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- More Qualified items -->
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-6">
+                <div class="qualified-section">
+                  <div class="person-box" data-index="2">
+                    <img
+                      src="images/7.jpg"
+                      alt="profile"
+                      style="height: 40px; width: 40px; border-radius: 50%"
+                    />
+                    <p class="person-name">Olivia</p>
+                    <p class="person-title">
+                      Software Engineer with proficiency in machine learning
+                      algorithms.
+                    </p>
+                    <div class="d-flex">
+                      <button
+                        class="btn0 p-1 m-2"
+                        style="width: 30%; height: 40%"
+                      >
+                        <a class="btn0-feature" href="#">Media</a>
+                      </button>
+                      <button
+                        class="btn0 p-1 m-2"
+                        style="width: 30%; height: 40%"
+                      >
+                        <a class="btn0-feature" href="#">Creative</a>
+                      </button>
+                      <button
+                        class="btn0 p-1 m-2"
+                        style="width: 30%; height: 40%"
+                      >
+                        <a class="btn0-feature" href="#">Agency</a>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- More Qualified items -->
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-6">
+                <div class="qualified-section">
+                  <div class="person-box" data-index="3">
+                    <img
+                      src="images/11.jpg"
+                      alt="profile"
+                      style="height: 40px; width: 40px; border-radius: 50%"
+                    />
+                    <p class="person-name">Ava</p>
+                    <p class="person-title">
+                      Graphic Designer experienced in branding and visual
+                      identity.
+                    </p>
+                    <div class="d-flex">
+                      <button
+                        class="btn0 p-1 m-2"
+                        style="width: 30%; height: 40%"
+                      >
+                        <a class="btn0-feature" href="#">Media</a>
+                      </button>
+                      <button
+                        class="btn0 p-1 m-2"
+                        style="width: 30%; height: 40%"
+                      >
+                        <a class="btn0-feature" href="#">Creative</a>
+                      </button>
+                      <button
+                        class="btn0 p-1 m-2"
+                        style="width: 30%; height: 40%"
+                      >
+                        <a class="btn0-feature" href="#">Agency</a>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- More Qualified items -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-lg-9 main-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="profile-header p-5" style="height: 200px">
+                  <img
+                    id="profile-image"
+                    src=""
+                    alt="profile picture"
+                    style="height: 70px; width: 70px; border-radius: 50%"
+                  />
+                  <div class="m-2">
+                    <div class="profile" id="profile">
+                      <h4 id="name"></h4>
+                      <p id="role"></p>
+                      <p id="description"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <!-- About Section -->
+                <div class="about-section p-5 mt-4">
+                  <h3>About</h3>
+                  <p>
+                    Our Application Tracking feature streamlines the job
+                    application process for both job seekers and employers. For
+                    candidates, it provides a user-friendly interface to manage
+                    and monitor the status of their job applications in
+                    real-time, from submission to final decision. You can easily
+                    track where you stand in the hiring process, view updates,
+                    and receive notifications on interviews and feedback. For
+                    employers, the system offers an efficient way to organize
+                    and evaluate candidates, ensuring a seamless hiring
+                    workflow. The Application Tracking tool helps manage job
+                    postings, review applications, and communicate with
+                    potential hires—all in one place.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <!-- Timeline Section -->
+                <div class="timeline-section p-4 mt-4">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-9">
+                        <h3>Timeline</h3>
+                        <img
+                          src="images/5.jpg"
+                          alt="profile"
+                          style="height: 50px; width: 50px; border-radius: 50%"
+                        />
+                        <img
+                          src="images/3.jpg"
+                          alt="profile"
+                          style="height: 50px; width: 50px; border-radius: 50%"
+                        />
+                        <img
+                          src="images/6.jpg"
+                          alt="profile"
+                          style="height: 50px; width: 50px; border-radius: 50%"
+                        />
+                      </div>
+                      <div class="col-lg-3">
+                        <p>
+                          212 followers
+                          <button
+                            class="btn0 p-1 m-2"
+                            style="width: 30%; height: 40%"
+                          >
+                            <a class="btn0-feature" href="#">follow</a>
+                          </button>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="timeline-post">
+                    <img
+                      src="images/10.jpg"
+                      alt="profile"
+                      style="height: 70px; width: 70px; border-radius: 50%"
+                    />
+                    <p>
+                      <strong>Sara Smith</strong> visible to
+                      <span class="text-primary">everyone</span>
+                    </p>
+                    <p>
+                      Ok, person link. I'll get in touch and arrange the call.
+                    </p>
+                  </div>
+                  <div class="timeline-post">
+                    <img
+                      src="images/11.jpg"
+                      alt="profile"
+                      style="height: 70px; width: 70px; border-radius: 50%"
+                    />
+                    <p>
+                      <strong>Malisa Rose</strong> visible to
+                      <span class="text-primary">everyone</span>
+                    </p>
+                    <p>
+                      Ok, person link. I'll get in touch and arrange the call.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- .........................Footer............................. -->
+
+    <footer>
+      <nav class="nav-feature">
+        <p>&#169; 2024 JOb Portal. All rights reserved</p>
+        <address>Contact us: info@Job.com | 123-456-7659</address>
+      </nav>
+    </footer>
+
+    <script>
+      const profiles = [
+        {
+          name: "Emma",
+          role: "Data Analyst",
+          description:
+            "Expertise in data visualization and insight-driven decision making.",
+          image: "images/9.jpg",
+        },
+        {
+          name: "Sophia",
+          role: "Marketing Specialist",
+          description:
+            "Skilled in digital advertising strategies and social media campaigns.",
+          image: "images/8.jpg",
+        },
+        {
+          name: "Olivia",
+          role: "Software Engineert",
+          description: "with proficiency in machine learning algorithms.",
+          image: "images/7.jpg",
+        },
+        {
+          name: "Ava",
+          role: "Graphic Designer",
+          description: "experienced in branding and visual identity.",
+          image: "images/11.jpg",
+        },
+        // add your more profile
+      ];
+
+      const personBoxes = document.querySelectorAll(".person-box");
+      const profileDiv = document.getElementById("profile");
+      const nameElement = document.getElementById("name");
+      const roleElement = document.getElementById("role");
+      const descriptionElement = document.getElementById("description");
+      const imageElement = document.getElementById("profile-image");
+
+      function showProfile(index) {
+        const profile = profiles[index];
+        nameElement.textContent = profile.name;
+        roleElement.textContent = profile.role;
+        descriptionElement.textContent = profile.description;
+        imageElement.src = profile.image;
+        profileDiv.style.display = "inline";
+      }
+
+      personBoxes.forEach((box) => {
+        box.addEventListener("click", function () {
+          const index = this.getAttribute("data-index");
+          showProfile(index);
+        });
+      });
+
+      window.onload = function () {
+        showProfile(0);
+      };
+    </script>
+  </body>
+</html>

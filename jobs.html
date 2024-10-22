@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="authors"
+      content="Sahar Timori,Somaiya Noori,Sahar Yousufi,Setayesh Amini"
+    />
+    <meta name="about" content="Job Portal" />
+    <title>Jobs</title>
+    <link href="style.css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="images/favicon .ico" rel="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9c5fb0e0d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="style.css/smallscreen.css"
+      rel="stylesheet"
+      media="screen and (max-width: 765px)"
+    />
+    <link
+      href="style.css/widescreen.css"
+      rel="stylesheet"
+      media="screen and (max-width: 991px)"
+    />
+  </head>
+  <body>
+    <!--......................sidebar section.......................-->
+
+    <header>
+      <button
+        class="btn"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+      >
+        <img src="images/sidebar-logo.png" class="sidebar-logo" />
+      </button>
+      <a class="nav-brand" href="#">JObs</a>
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            Job Portal
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <nav>
+            <ul>
+              <li class="nav-item">
+                <i class="fa-solid fa-house"></i
+                ><a href="index.html" class="sidebar-link">Home</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-briefcase"></i
+                ><a href="recent job.html" class="sidebar-link">Recent Jobs</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-user-tie"></i
+                ><a href="admin panel.html" class="sidebar-link">Admin Panel</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-table-columns"></i
+                ><a href="dashboard.html" class="sidebar-link">Dashboard</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-file-invoice"></i
+                ><a href="jobs.html" class="sidebar-link">Jobs</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <a href="application tracking.html" class="sidebar-link"
+                  >Application tracking</a
+                >
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-id-card"></i
+                ><a href="profile.html" class="sidebar-link">profile</a>
+              </li>
+              <br />
+              <li class="nav-item">
+                <i class="fa-solid fa-users"></i
+                ><a href="about us.html" class="sidebar-link">About us</a>
+              </li>
+              <br /><br /><br /><br />
+              <button class="btn" style="color: #e7eff6">
+                <i class="fa-solid fa-right-from-bracket"></i> Log Out
+              </button>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <section class="search-bar">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control search-form me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-search mx-1" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </section>
+    </header>
+
+    <main>
+      <div class="container mt-2 p-2">
+        <div class="row">
+          <section>
+            <div class="motivation container mt-5">
+              <p>
+                "Transform Your Passion into Profession: <br />
+                Let us guide you to your ideal career!"
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div
+                class="carousel-inner"
+                style="height: 80%; width: 100%; padding-left: 3%"
+              >
+                <div class="carousel-item active">
+                  <img
+                    src="images/doctor.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/employee.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/computer.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/police.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- start search bar -->
+
+            <div class="container py-5 me-4" style="padding-left: 25%">
+              <div class="row">
+                <div class="col-lg-6 job-search">
+                  <div class="input-group mb-3">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search Jobs"
+                        id="search-input"
+                      />
+                      <button
+                        class="btn"
+                        style="background-color: #2a4d69; color: #e7eff6"
+                        type="button"
+                        id="button-addon2"
+                      >
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="dropdown filter-feature">
+                    <button
+                      class="btn dropdown-toggle"
+                      style="color: #e7eff6; background-color: #2a4d69"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Filter
+                    </button>
+                    <div class="dropdown-menu" id="job-type-dropdown">
+                      <h6 class="dropdown-header">Job Type</h6>
+                      <div class="dropdown-divider"></div>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-job-type="Full-Time"
+                        >Full-Time</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-job-type="Part-Time"
+                        >Part-Time</a
+                      >
+                      <a class="dropdown-item" href="#" data-job-type="Contract"
+                        >Contract</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        data-job-type="Internship"
+                        >Internship</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12" id="joblistcontainer">
+                <div class="general-job-card">
+                  <div class="job-details">
+                    <div class="text">
+                      <h2>Backend Developer</h2>
+                      <span>
+                        A Software Engineer designs, develops, tests, and
+                        maintains software applications. They work with
+                        JavaScript and python to create efficient and scalable
+                        solutions, collaborating with cross-functional teams to
+                        ensure software meets user needs and quality
+                        standards.</span
+                      >
+                    </div>
+                    <div class="job-location">
+                      <span>london</span>
+                      <button class="btn0">
+                        <a class="btn0-feature" href="profile.html">Apply</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ..............pagenation................ -->
+
+          <div class="container">
+            <div class="pagination-wrapper">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link page-link" style="color: black" href="#"
+                    >Previous</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    style="color: black"
+                    href="#"
+                    data-page="1"
+                    >1</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    style="color: black"
+                    href="#"
+                    data-page="2"
+                    >2</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    style="color: black"
+                    href="#"
+                    data-page="3"
+                    >3</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link" style="color: black" href="#">Next</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--
+          </section>
+          -->
+        </div>
+      </div>
+    </main>
+
+    <!-- ..............Footer................ -->
+
+    <footer>
+      <nav class="nav-feature">
+        <p>&#169; 2024 JOb Portal. All rights reserved</p>
+        <address>Contact us: info@Job.com | 123-456-7659</address>
+      </nav>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const jobPostings = [
+          {
+            id: "1",
+            company: "Google",
+            title: "Software Engineer",
+            description: `A Software Engineer designs, develops, tests, and
+                        maintains software applications. They work with
+                        JavaScript and python to create efficient and scalable
+                        solutions, collaborating with cross-functional teams to
+                        ensure software meets user needs and quality
+                        standards.`,
+            applyLink: "profile.html",
+            icon: "fab fa-google",
+            apply: "Apply",
+            JobType: "Full-Time",
+            Location: "Remote",
+            Industry: "Technology",
+            Skills: "JavaScript",
+          },
+          {
+            id: "2",
+            company: "Microsoft",
+            title: "Graphic Designer",
+            description: ` The Graphic Designer creates visual content for various
+                        platforms, focusing on branding and advertising. You
+                        will utilize design software to produce eye-catching
+                        graphics, ensuring that all materials communicate the
+                        intended message and resonate with the audience.`,
+            applyLink: "profile2.html",
+            icon: "fab fa-facebook",
+            apply: "Apply",
+            JobType: "Contract",
+            Location: "Remote",
+            Industry: "Technology",
+            Skills: "JavaScript",
+          },
+          {
+            id: "3",
+            company: "Google",
+            title: "Customer Service Manager",
+            description: ` As a Customer Service Manager, you will oversee the
+                        customer service department, ensuring high levels of
+                        customer satisfaction. Your role includes managing
+                        staff, developing training programs, and implementing
+                        best practices to enhance service delivery.`,
+            applyLink: "profile2.html",
+            icon: "fab fa-git-alt",
+            apply: "Apply",
+            JobType: "Full-Time",
+            Location: "Remote",
+            Industry: "Technology",
+            Skills: "JavaScript",
+          },
+          {
+            id: "4",
+            company: "Amazon",
+            title: "Digital Marketing Specialist",
+            description: `In this position, a Digital Marketing Specialist will
+                        implement online marketing strategies aimed at driving
+                        traffic to websites and increasing brand awareness.
+                        You’ll utilize various channels, including social media,
+                        email, and SEO, to reach target audiences.`,
+            applyLink: "profile2.html",
+            icon: "fab fa-facebook",
+            apply: "Apply",
+            JobType: "Part-Time",
+            Location: "New-York",
+            Industry: "Finance",
+            Skills: "Python",
+          },
+          {
+            id: "5",
+            company: "IBM",
+            title: "Content Manager",
+            description: `A Content Manager is responsible for creating and
+                        overseeing the content strategy of a brand. You will
+                        ensure that all digital content aligns with brand
+                        messaging, engages the audience effectively, and
+                        enhances overall marketing objectives.`,
+            applyLink: "profile2.html",
+            icon: "fab fa-youtube",
+            apply: "Apply",
+            JobType: "Part-Time",
+            Location: "New-York",
+            Industry: "Finance",
+            Skills: "Python",
+          },
+          {
+            id: "6",
+            company: "Facebook",
+            title: "Game Developer",
+            description: ` As a Game Developer, you will design and create engaging
+                        video games. This involves programming gameplay
+                        mechanics, developing graphics, and optimizing
+                        performance to deliver a fun and immersive experience
+                        for players across various platforms.`,
+            applyLink: "profile2.html",
+            icon: "fab fa-google",
+            apply: "Apply",
+            JobType: "Part-Time",
+            Location: "New-York",
+            Industry: "Finance",
+            Skills: "Python",
+          },
+          {
+            id: "7",
+            company: "Netflix",
+            title: "Cybersecurity Specialist",
+            description: ` In the role of Cybersecurity Specialist, you will
+                        protect organizational systems and data from cyber
+                        threats. Your responsibilities include risk assessment,
+                        implementing security measures, and responding to
+                        incidents to safeguard sensitive information and ensure
+                        compliance.`,
+            applyLink: "profile2.html",
+            icon: "fab fa-facebook",
+            apply: "Apply",
+            JobType: "Part-Time",
+            Location: "San-Francisco",
+            Industry: "Healthcare",
+            Skills: "SQL",
+          },
+          {
+            id: "8",
+            company: "Apple",
+            title: "Mobile Application Developer",
+            description: `A mobile application developer designs, develops, tests, and
+                        maintains software applications. They work with
+                        JavaScript and python to create efficient and scalable
+                        solutions, collaborating with cross-functional teams to
+                        ensure software meets user needs and quality
+                        standards.`,
+            applyLink: "profile2.html",
+            icon: "fab fa-facebook",
+            apply: "Apply",
+            JobType: "Internship",
+            Location: "San-Francisco",
+            Industry: "Healthcare",
+            Skills: "SQL",
+          },
+          {
+            id: "9",
+            company: "Salesforce",
+            title: "SEO Specialist",
+            description: ` As an SEO Specialist, your responsibility is to improve
+                        website visibility on search engines. You’ll conduct
+                        keyword research, optimize content, and develop
+                        link-building strategies to enhance rankings, driving
+                        organic traffic and increasing conversions.`,
+            applyLink: "profile2.html",
+            icon: "fab fa-facebook",
+            apply: "Apply",
+            JobType: "Internship",
+            Location: "London",
+            Industry: "Education",
+            Skills: "Project-Management",
+          },
+          {
+            id: "10",
+            company: "Adobe",
+            title: "UI/UX Designer",
+            description: `A Software Engineer designs, develops, tests, and
+                        maintains software applications. They work with
+                        JavaScript and python to create efficient and scalable
+                        solutions, collaborating with cross-functional teams to
+                        ensure software meets user needs and quality
+                        standards.`,
+            applyLink: "profile2.html",
+            icon: "fab fa-facebook",
+            apply: "Apply",
+            JobType: "Contract",
+            Location: "London",
+            Industry: "Education",
+            Skills: "Project-Management",
+          },
+        ];
+
+        // create jobcards function
+
+        function createJobCard(job) {
+          return `
+        <div class="job-details">
+          <div class="text">
+            <h2>${job.title}</h2>
+            <span>${job.description}</span>
+          </div>
+        </div>
+          <div class="job-location">
+          <span>${job.Location}</span>
+          <button class="btn0">
+            <a href="${job.applyLink}" class="btn0-feature">${job.apply}</a>
+          </button>
+        </div>
+        
+      `;
+        }
+
+        const jobListContainer = document.getElementById("joblistcontainer");
+
+        if (jobListContainer !== null) {
+          jobPostings.forEach((job) => {
+            const jobCard = document.createElement("div");
+            jobCard.className = "general-job-card";
+            jobCard.innerHTML = createJobCard(job);
+            jobListContainer.appendChild(jobCard);
+          });
+        }
+
+        // search input and button
+
+        const button = document.getElementById("button-addon2");
+        const searchInput = document.getElementById("search-input");
+
+        button.addEventListener("click", function () {
+          jobListContainer.innerHTML = "";
+
+          const searchTerm = searchInput.value.trim().toLowerCase();
+          jobPostings.forEach((job) => {
+            if (
+              job.company.toLowerCase().includes(searchTerm) ||
+              job.title.toLowerCase().includes(searchTerm) ||
+              job.Location.toLowerCase().includes(searchTerm)
+            ) {
+              const jobCard = document.createElement("div");
+              jobCard.className = "recent-job-card";
+              jobCard.innerHTML = createJobCard(job);
+              jobListContainer.appendChild(jobCard);
+            }
+          });
+        });
+
+        // fiter button
+
+        const linkBtn = document.querySelectorAll(".dropdown-item");
+
+        linkBtn.forEach((linkBtn) => {
+          linkBtn.addEventListener("click", function () {
+            jobListContainer.innerHTML = "";
+
+            const filterTerm = linkBtn.textContent;
+            jobPostings.forEach((job) => {
+              if (
+                job.JobType.includes(filterTerm) ||
+                job.Industry.includes(filterTerm) ||
+                job.Skills.includes(filterTerm) ||
+                job.Location.includes(filterTerm)
+              ) {
+                const jobCard = document.createElement("div");
+                jobCard.className = "general-job-card";
+                jobCard.innerHTML = createJobCard(job);
+                jobListContainer.appendChild(jobCard);
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

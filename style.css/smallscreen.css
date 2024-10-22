@@ -1,0 +1,63 @@
+@media screen and (max-width: 765px) {
+    body {
+        font-size: smaller;
+    }
+    div {
+        padding: 2%;
+    }
+    .featured-img {
+        display: none;
+    }
+    .main {
+        background-image: url(/images/businesswomen.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 95vh;
+        width: 100%;
+        }
+    .btn0, .btn1 {
+        height: 30px;
+        width: 80px;
+    }
+    .search-bar{
+        width: 200px;
+        font-size: 12px;
+    }
+    .head-img input {
+        display: none;
+    }
+    .head-img .btn0 {
+        padding: 3%;
+    }
+    .text h2,h4 {
+        font-size: 13px;
+    }
+    .search-bar-two input , .search-bar-two button{
+        display: none;
+    }
+    .search-bar-one input{
+        width: 50%;
+        left: 10%;
+    }
+    .search-bar-one button{
+        left: 53%;
+    }
+    .profilee {
+        width: 100%;
+    }
+    .profile-header{
+        padding: 5%;
+    }
+    .post-div-feature h3{
+        padding-top: 10%;
+    }
+    .prof-information p {
+        font-size: 10px;
+    }
+    .job-details {
+        display: inline;
+      }
+    .general-job-card {
+        display: block;
+    }
+}

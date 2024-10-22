@@ -1,0 +1,763 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: #e7eff6;
+}
+.nav-brand {
+  font-size: 2rem;
+  color: #2a4d69;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+}
+.nav-link:hover {
+  background-color: #2a4d69;
+  border: #2a4d69 solid;
+  transition: 0.2s;
+  border-radius: 10px;
+}
+.nav-item {
+  font-weight: 500;
+  padding-left: 35px;
+}
+.btn0 {
+  height: 52px;
+  width: 130px;
+  outline: none;
+  border: none;
+  color: #e7eff6;
+  cursor: pointer;
+  transition: all 0.4s;
+  background-color: #2a4d69;
+  border-radius: 10px;
+}
+.btn0:hover {
+  background-color: #0f283d;
+  transition: all 0.4s;
+}
+.btn1 {
+  height: 52px;
+  width: 130px;
+  background-color: transparent;
+  color: #2a4d69;
+  outline: none;
+  border: 2px solid #2a4d69;
+  border-radius: 10px;
+}
+.btn1:hover {
+  background-color: #0f283d;
+  transition: all 0.4s;
+  color: #e7eff6;
+  border: none;
+  outline: none;
+}
+.btn0-feature {
+  text-decoration: none;
+  color: #e7eff6;
+}
+.btn1-feature {
+  text-decoration: none;
+  color: #0f283d;
+}
+.btn1-feature:hover {
+  color: #e7eff6;
+}
+div {
+  padding: 2px;
+}
+
+/*..............Main section..............*/
+
+.main h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #2a4d69;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+.main input {
+  height: 71px;
+  width: 70%;
+  border: none;
+  outline: none;
+  padding: 15px;
+}
+.btn2 {
+  height: 70px;
+  width: 25%;
+  background-color: #2a4d69;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-left: -4px;
+}
+.btn2:hover {
+  background-color: #0f283d;
+  transition: all 0.4s;
+}
+
+/*..............category section..............*/
+
+.Category h1 {
+  font-size: 3.5rem;
+  color: black;
+}
+.Category img {
+  width: 30%;
+  height: 30%;
+}
+.Category .card:hover {
+  color: rgb(155, 150, 150);
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: -3px 1px 23px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 1px 23px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 1px 23px -5px rgba(0, 0, 0, 0.75);
+}
+.btn3 {
+  height: 70px;
+  width: 70%;
+  border: 1px solid #2a4d69;
+  background: transparent;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+.btn4 {
+  height: 70px;
+  width: 70%;
+  border: 1px solid #e7eff6;
+  color: #e7eff6;
+  background: transparent;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+.btn3:hover {
+  background-color: #2a4d69;
+  color: white;
+  border: none;
+  outline: none;
+  transition: all 0.4s;
+}
+.btn4:hover {
+  background-color: #2a4d69;
+  color: white;
+  border: none;
+  outline: none;
+  transition: all 0.4s;
+}
+
+/*..............Resume section..............*/
+
+.resume h1 {
+  font-size: 3.8rem;
+}
+
+/*..............our team section..............*/
+
+.our-team .card {
+  box-shadow: -3px 1px 23px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 1px 23px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 1px 23px -5px rgba(0, 0, 0, 0.75);
+}
+.card-body {
+  height: 30vh;
+}
+
+/*..............Footer..............*/
+
+.nav-feature {
+  background-color: #e7eff6;
+  color: #0f283d;
+  text-align: center;
+  margin-top: 5%;
+  height: 15vh;
+  padding: 2%;
+}
+
+/*..............Login and register pages..............*/
+
+.featured-img {
+  width: 100%;
+  height: 100vh;
+  border-radius: 30px;
+}
+.input-feature {
+  width: 100%;
+  border: none;
+  padding: 1.5%;
+  background-color: #e7eff6;
+  border-radius: 2px;
+}
+.input-feature:hover {
+  box-shadow: 2px 1px 2px 1px #2a4d69;
+}
+.right-box {
+  background-color: white;
+  border-radius: 30px;
+}
+.login-button {
+  width: 100%;
+  border: none;
+  background-color: #2a4d69;
+  color: white;
+  padding: 1.5%;
+  border-radius: 10px;
+  text-align: center;
+}
+.login-button:hover {
+  background-color: #0f283d;
+}
+.forget-link {
+  padding-left: 50%;
+}
+.login-text {
+  text-align: center;
+  padding: 10%;
+}
+
+/*..............Dashboard page..............*/
+
+/*..............Headar page..............*/
+
+header {
+  background-color: #e7eff6;
+  justify-content: center;
+  padding: 5px;
+  height: 70px;
+}
+.sidebar-logo {
+  width: 30px;
+  height: 30px;
+  background-color: #e7eff6;
+}
+.offcanvas-body {
+  background-color: #2a4d69;
+  color: white;
+}
+
+.offcanvas-header {
+  background-color: #2a4d69;
+  color: white;
+}
+.offcanvas-body ul {
+  list-style-type: none;
+}
+.sidebar-link {
+  text-decoration: none;
+  color: #efeff6;
+}
+.search-bar .btn-search {
+  position: absolute;
+  top: 14px;
+  right: 10.5%;
+  border-radius: 50%;
+  background-color: #2a4d69;
+  color: white;
+  height: 38px;
+  width: 40px;
+}
+.search-bar .search-form {
+  top: 15px;
+  right: 10%;
+  position: absolute;
+  width: 30%;
+  border-radius: 80px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+/*..............Scroll section..............*/
+
+.scroll-div-feature {
+  text-align: center;
+  background-color: #e7eff6;
+  padding: 4%;
+  border: 10px solid white;
+  height: 80vh;
+  border-radius: 30px;
+}
+.scroll-bg {
+  background-color: #e7eff6;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.scroll-div {
+  height: 60vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: #e7eff6;
+}
+
+.scroll-object .list-group a .active {
+  background-color: white;
+}
+
+.scroll-object .list-group a {
+  background-color: #e7eff6;
+  color: black;
+  border: none;
+}
+
+.scroll-object .list-group a div img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.scroll-object .list-group a div p {
+  font-size: 15px;
+  left: 0%;
+  top: 2px;
+}
+
+.scroll-object .list-group a .name {
+  top: 9px;
+  position: relative;
+}
+
+.scroll-object .list-group a div {
+  height: 50px;
+  align-items: center;
+  padding: 2px;
+  display: flex;
+}
+
+.scroll-object .list-group a div .icon button .fa-envelope {
+  font-size: 25px;
+}
+
+.scroll-object .list-group a div .icon button {
+  border: none;
+  background-color: #e7eff6;
+  color: #2a4d69;
+}
+
+/*..............profile or job title section..............*/
+
+.prof-div-feature {
+  background-color: #e7eff6;
+  border: white solid 10px;
+  height: 80vh;
+  padding: 0%;
+  margin: 0%;
+  border-radius: 30px;
+}
+.head-img h2 {
+  text-align: center;
+  padding-top: 5%;
+}
+.employee-prof {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-left: 10%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/*..............post a job section..............*/
+
+.post-div-feature {
+  text-align: center;
+  background-color: #e7eff6;
+  padding: 4%;
+  border: 10px solid white;
+  height: 35vh;
+  border-radius: 30px;
+}
+.post-div-feature h3 {
+  text-align: center;
+}
+.con-post-job {
+  font-weight: bold;
+  font-size: large;
+  background-color: #e7eff6;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.post-job-btn {
+  background-color: #2a4d69;
+  height: 70px;
+  width: 110px;
+  outline: none;
+  border-radius: 10%;
+}
+
+.post-job-btn input {
+  border: none;
+  background-color: #2a4d69;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.con-post-job input {
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 90%;
+}
+
+.con-post-job input::placeholder {
+  font-size: 15px;
+  color: gray;
+  padding: 10px;
+}
+
+.con-post-job select {
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 70%;
+}
+
+/*..............Recent job page..............*/
+
+h1 {
+  margin: 20px 10px;
+  padding-left: 8%;
+}
+.dropdown-menu {
+  background-color: #2a4d69;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.dropdown-item {
+  color: white;
+}
+.row {
+  display: flex;
+  padding: 15px;
+  margin-top: 1.3rem;
+  justify-content: space-between;
+}
+.row p {
+  color: rgb(54, 54, 54);
+  font-size: 15px;
+}
+.row p span {
+  color: #2a4d69;
+}
+.recent-job-card {
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  border-radius: 10px;
+  background-color: #e7eff6;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  border: 1px solid rgb(190, 190, 190);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+.job-details {
+  display: flex;
+}
+.job-details .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.job-details i {
+  width: 70px;
+  font-size: 3rem;
+  margin-left: 1rem;
+  padding: 10px;
+  color: #e7eff6;
+  background: #2a4d69;
+}
+.job-details .text {
+  margin-left: 2.3rem;
+}
+.job-details .text span {
+  color: rgb(116, 112, 112);
+}
+.job-location {
+  text-align: right;
+  color: rgb(54, 54, 54);
+}
+.recent-job-card:hover {
+  border: 2px solid #2a4d69;
+  transition: 0.2s;
+}
+
+/*..............jobs page..............*/
+
+.motivation p {
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+}
+.general-job-card {
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  border-radius: 10px;
+  background-color: #f1f6fa;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  border: 1px solid rgb(212, 212, 212);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+.general-job-card:hover{
+  background-color: #ffffff;
+  width: 98%;
+  transition: 0.8s;
+  border: none;
+}
+
+/* the pagination */
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+  background-color: #e7eff6;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.page-item {
+  margin: 0 0.25rem; /* Padding between links */
+}
+
+.page-link {
+  border: 1px solid #e7eff6;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+}
+
+.page-link:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*..............Application Tracking page..............*/
+
+.person-box {
+  background-color: #e7eff6;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.person-name {
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #e7eff6;
+}
+
+.person-title {
+  font-size: 14px;
+  color: #888;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+.about-section,
+.timeline-section {
+  background-color: #e7eff6;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.timeline-post {
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+}
+
+/*.................. profile page...................*/
+
+/* div of profile*/
+.profile-div-left {
+  height: 100vh;
+  border: white 5px solid;
+  border-radius: 20px;
+  background-color: #e7eff6;
+}
+@media (max-width: 1010px) {
+  .profile-div-left {
+    height: 60vh;
+  }
+}
+/* div of personal information*/
+.form-div {
+  height: 100vh;
+  border: white 5px solid;
+  border-radius: 20px;
+  background-color: #e7eff6;
+}
+@media (max-width: 1030px) {
+  .form-div {
+    height: fit-content;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+}
+/* img at div of profile*/
+.cricle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 30%;
+}
+
+/* these are related to my form*/
+.big {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.group {
+  flex: 45%;
+  margin: 10px;
+  width: 100%;
+}
+label {
+  margin-bottom: 2px;
+}
+.form-div input,
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid rgb(173, 171, 171);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+@media (max-width: 800px) {
+  .two {
+    width: 100%;
+    height: auto;
+  }
+  .group {
+    flex: 1 1 100%;
+  }
+}
+/*..............end profile.............*/
+
+/* ..........................Admin panel page....................................*/
+/* three divs */
+
+.chart {
+  flex: 1;
+  min-width: 200px; /* Ensure minimum width for responsiveness */
+  margin: 0 10px;
+}
+
+.admin {
+  width: 30%; /* Adjust as needed */
+  margin-right: 20px;
+  text-align: center;
+}
+
+.column {
+  width: 40%; /* Adjust as needed */
+}
+
+.pie {
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .admin {
+    width: 100%;
+  }
+
+  .chart {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.wallet {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* style of div that write about flowers*/
+.box {
+  border-radius: 20px;
+  flex-grow: 1;
+  height: 80px;
+  background-image: linear-gradient(
+    40deg,
+    #778db5,
+    #92a6ed,
+    rgb(128, 169, 244)
+  );
+  text-align: center;
+  padding-top: 10px;
+  margin: 30px;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  .box {
+    width: 38%;
+  }
+}
+/* style of div that has content about wallet*/
+
+.boxes {
+  cursor: pointer;
+  border-radius: 10px;
+  flex-grow: 1;
+  height: 90px;
+  background-image: linear-gradient(40deg, #7fa4e9, #92aae7, rgb(11, 96, 200));
+  margin: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+@media (max-width: 800px) {
+  .boxes {
+    width: 40%;
+  }
+}
+/* style of the first img */
+.buleimg {
+  width: 95%;
+}
+/* style of table at div of all */
+.tables {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr;
+  margin: 30px;
+  gap: 30px;
+}
+.table tbody img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.table tbody th,
+.table tbody td,
+.table thead th {
+  background-color: #e7eff6;
+}
+@media (max-width: 800px) {
+  .tables {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    margin: 0;
+  }
+}
